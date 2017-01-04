@@ -72,7 +72,7 @@ KB_MATRIX_LAYER(
 	KEY_Tab,	KEY_q_Q,	KEY_w_W,	KEY_e_E,	KEY_r_R,	KEY_t_T,	KEY_LeftBracket_LeftBrace,	
 	KEY_LeftControl,	KEY_a_A,	KEY_s_S,	KEY_d_D,	KEY_f_F,	KEY_g_G,	
 	KEY_LeftShift,	KEY_z_Z,	KEY_x_X,	KEY_c_C,	KEY_v_V,	KEY_b_B,	KEY_RightBracket_RightBrace,	
-	2,	1,	KEY_LeftControl,	KEY_LeftAlt,	KEY_LeftGUI,	
+	2,	3,	KEY_LeftControl,	KEY_LeftAlt,	KEY_LeftGUI,	
 	KEY_LeftArrow,	KEY_RightArrow,	
 	0,	0,	KEY_LeftControl,	
 	KEY_Spacebar,	KEY_Escape,	KEY_DeleteBackspace,	
