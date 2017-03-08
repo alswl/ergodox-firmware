@@ -29,36 +29,47 @@ void kbfun_layer_pop_all(void) {
 }
 
 // DEFINITIONS ----------------------------------------------------------------
-#define  kprrel   &kbfun_press_release
-#define  mprrel   &kbfun_mediakey_press_release
-#define  ktog     &kbfun_toggle
-#define  ktrans   &kbfun_transparent
-#define  lpush1   &kbfun_layer_push_1
-#define  lpush2   &kbfun_layer_push_2
-#define  lpush3   &kbfun_layer_push_3
-#define  lpush4   &kbfun_layer_push_4
-#define  lpush5   &kbfun_layer_push_5
-#define  lpush6   &kbfun_layer_push_6
-#define  lpush7   &kbfun_layer_push_7
-#define  lpush8   &kbfun_layer_push_8
-#define  lpush9   &kbfun_layer_push_9
-#define  lpush10  &kbfun_layer_push_10
-#define  lpop     &kbfun_layer_pop_all
-#define  lpop1    &kbfun_layer_pop_1
-#define  lpop2    &kbfun_layer_pop_2
-#define  lpop3    &kbfun_layer_pop_3
-#define  lpop4    &kbfun_layer_pop_4
-#define  lpop5    &kbfun_layer_pop_5
-#define  lpop6    &kbfun_layer_pop_6
-#define  lpop7    &kbfun_layer_pop_7
-#define  lpop8    &kbfun_layer_pop_8
-#define  lpop9    &kbfun_layer_pop_9
-#define  lpop10   &kbfun_layer_pop_10
-#define  dbtldr   &kbfun_jump_to_bootloader
-#define  sshprre  &kbfun_shift_press_release
-#define  s2kcap   &kbfun_2_keys_capslock_press_release
-#define  slpunum  &kbfun_layer_push_numpad
-#define  slponum  &kbfun_layer_pop_numpad
+#define  kprrel     &kbfun_press_release
+#define  kprpst     &kbfun_press_release_preserve_sticky
+#define  mprrel     &kbfun_mediakey_press_release
+#define  ktog       &kbfun_toggle
+#define  ktrans     &kbfun_transparent
+#define  lpush1     &kbfun_layer_push_1
+#define  lpush2     &kbfun_layer_push_2
+#define  lpush3     &kbfun_layer_push_3
+#define  lpush4     &kbfun_layer_push_4
+#define  lpush5     &kbfun_layer_push_5
+#define  lpush6     &kbfun_layer_push_6
+#define  lpush7     &kbfun_layer_push_7
+#define  lpush8     &kbfun_layer_push_8
+#define  lpush9     &kbfun_layer_push_9
+#define  lpush10    &kbfun_layer_push_10
+#define  lpop       &kbfun_layer_pop_all
+#define  lpop1      &kbfun_layer_pop_1
+#define  lpop2      &kbfun_layer_pop_2
+#define  lpop3      &kbfun_layer_pop_3
+#define  lpop4      &kbfun_layer_pop_4
+#define  lpop5      &kbfun_layer_pop_5
+#define  lpop6      &kbfun_layer_pop_6
+#define  lpop7      &kbfun_layer_pop_7
+#define  lpop8      &kbfun_layer_pop_8
+#define  lpop9      &kbfun_layer_pop_9
+#define  lpop10     &kbfun_layer_pop_10
+#define  dbtldr     &kbfun_jump_to_bootloader
+#define  sshprre    &kbfun_shift_press_release
+#define  s2kcap     &kbfun_2_keys_capslock_press_release
+#define  slpunum    &kbfun_layer_push_numpad
+#define  slponum    &kbfun_layer_pop_numpad
+#define  lsticky1   &kbfun_layer_sticky_1
+#define  lsticky2   &kbfun_layer_sticky_2
+#define  lsticky3   &kbfun_layer_sticky_3
+#define  lsticky4   &kbfun_layer_sticky_4
+#define  lsticky5   &kbfun_layer_sticky_5
+#define  lsticky6   &kbfun_layer_sticky_6
+#define  lsticky7   &kbfun_layer_sticky_7
+#define  lsticky8   &kbfun_layer_sticky_8
+#define  lsticky9   &kbfun_layer_sticky_9
+#define  lsticky10  &kbfun_layer_sticky_10
 // ----------------------------------------------------------------------------
 
 // LAYOUT ---------------------------------------------------------------------
@@ -303,7 +314,7 @@ KB_MATRIX_LAYER(
 	// unused
 	NULL,	
 	// left hand
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	lpush1,	
+	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	lsticky1,	
 	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
@@ -326,23 +337,23 @@ KB_MATRIX_LAYER(
 	// unused
 	NULL,	
 	// left hand
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	lpop1,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	lpush2,	lpush3,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	
+	ktrans,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	lpop1,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
+	lpush2,	lpush3,	ktrans,	ktrans,	ktrans,	
+	ktrans,	ktrans,	
 	NULL,	NULL,	NULL,	
-	kprrel,	kprrel,	kprrel,	
+	ktrans,	ktrans,	ktrans,	
 	// right hand
 	lpop1,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	kprrel,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
+	ktrans,	ktrans,	
 	NULL,	NULL,	NULL,	
-	kprrel,	kprrel,	kprrel	
+	ktrans,	ktrans,	ktrans	
 ),
 // LAYER 2
 KB_MATRIX_LAYER(
@@ -538,7 +549,7 @@ KB_MATRIX_LAYER(
 	// unused
 	NULL,	
 	// left hand
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	NULL,	
+	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	lsticky1,	
 	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
@@ -561,23 +572,23 @@ KB_MATRIX_LAYER(
 	// unused
 	NULL,	
 	// left hand
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	NULL,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	lpop2,	lpop3,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	
+	ktrans,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	NULL,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
+	lpop2,	lpop3,	ktrans,	ktrans,	ktrans,	
+	ktrans,	ktrans,	
 	NULL,	NULL,	NULL,	
-	kprrel,	kprrel,	kprrel,	
+	ktrans,	ktrans,	ktrans,	
 	// right hand
 	NULL,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	kprrel,	kprrel,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	kprrel,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
+	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
+	ktrans,	ktrans,	
 	NULL,	NULL,	NULL,	
-	kprrel,	kprrel,	kprrel	
+	ktrans,	ktrans,	ktrans	
 ),
 // LAYER 2
 KB_MATRIX_LAYER(
