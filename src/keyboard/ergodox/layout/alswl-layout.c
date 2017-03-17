@@ -93,7 +93,7 @@ KB_MATRIX_LAYER(
 	KEY_h_H,	KEY_j_J,	KEY_k_K,	KEY_l_L,	KEY_Semicolon_Colon,	KEY_SingleQuote_DoubleQuote,	
 	KEY_Equal_Plus,	KEY_n_N,	KEY_m_M,	KEY_Comma_LessThan,	KEY_Period_GreaterThan,	KEY_Slash_Question,	KEY_RightShift,	
 	KEY_RightGUI,	KEY_RightAlt,	KEY_DownArrow,	KEY_UpArrow,	4,	
-	KEY_DownArrow,	KEY_UpArrow,	
+	KEY_LeftArrow,	KEY_RightArrow,	
 	KEY_RightControl,	0,	0,	
 	KEY_DeleteBackspace,	KEY_ReturnEnter,	KEY_Spacebar	
 ),
