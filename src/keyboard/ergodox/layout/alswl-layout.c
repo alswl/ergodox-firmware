@@ -85,8 +85,8 @@ KB_MATRIX_LAYER(
 	KEY_LeftShift,	KEY_z_Z,	KEY_x_X,	KEY_c_C,	KEY_v_V,	KEY_b_B,	KEY_RightBracket_RightBrace,	
 	2,	3,	KEY_LeftControl,	KEY_LeftAlt,	KEY_LeftGUI,	
 	KEY_LeftArrow,	KEY_RightArrow,	
-	0,	0,	KEY_LeftControl,	
-	KEY_Spacebar,	KEY_Escape,	KEY_DeleteBackspace,	
+	0,	0,	4,	
+	KEY_Spacebar,	KEY_Escape,	KEY_DeleteForward,	
 	// right hand
 	2,	KEY_6_Caret,	KEY_7_Ampersand,	KEY_8_Asterisk,	KEY_9_LeftParenthesis,	KEY_0_RightParenthesis,	KEY_Dash_Underscore,	
 	KEY_CapsLock,	KEY_y_Y,	KEY_u_U,	KEY_i_I,	KEY_o_O,	KEY_p_P,	KEY_Backslash_Pipe,	
@@ -320,7 +320,7 @@ KB_MATRIX_LAYER(
 	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 	lpush2,	lpush3,	kprrel,	kprrel,	kprrel,	
 	kprrel,	kprrel,	
-	NULL,	NULL,	kprrel,	
+	NULL,	NULL,	lpush4,	
 	kprrel,	kprrel,	kprrel,	
 	// right hand
 	lpush2,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
@@ -555,7 +555,7 @@ KB_MATRIX_LAYER(
 	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 	lpop2,	lpop3,	kprrel,	kprrel,	kprrel,	
 	kprrel,	kprrel,	
-	NULL,	NULL,	kprrel,	
+	NULL,	NULL,	NULL,	
 	kprrel,	kprrel,	kprrel,	
 	// right hand
 	NULL,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
@@ -647,7 +647,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
 	NULL,	NULL,	NULL,	NULL,	NULL,	
 	NULL,	NULL,	
-	NULL,	NULL,	NULL,	
+	NULL,	NULL,	lpop4,	
 	NULL,	NULL,	NULL,	
 	// right hand
 	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	
