@@ -95,7 +95,7 @@ KB_MATRIX_LAYER(
 	KEY_RightGUI,	KEY_RightAlt,	KEY_DownArrow,	KEY_UpArrow,	4,	
 	KEY_LeftArrow,	KEY_RightArrow,	
 	KEY_RightControl,	0,	0,	
-	KEY_DeleteBackspace,	KEY_ReturnEnter,	KEY_Spacebar	
+	KEY_RightControl,	KEY_DeleteBackspace,		KEY_ReturnEnter
 ),
 // LAYER 1
 KB_MATRIX_LAYER(
