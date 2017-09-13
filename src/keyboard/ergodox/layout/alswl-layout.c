@@ -74,7 +74,7 @@ void kbfun_layer_pop_all(void) {
 
 // LAYOUT ---------------------------------------------------------------------
 const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
-// LAYER 0
+// LAYER 0 layout
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -97,7 +97,7 @@ KB_MATRIX_LAYER(
 	KEY_RightControl,	0,	0,	
 	KEY_Spacebar,	KEY_DeleteBackspace,		KEY_ReturnEnter
 ),
-// LAYER 1
+// LAYER 1 layout
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -113,14 +113,14 @@ KB_MATRIX_LAYER(
 	// right hand
 	1,	KEY_F6,	KEY_F7,	KEY_F8,	KEY_F9,	KEY_F10,	KEY_F11,	
 	KEY_CapsLock,	0,	KEY_F7,	KEY_F8,	KEY_F9,	KEY_F10,	KEY_F12,	
-	0,	0,	KEY_F4,	KEY_F5,	KEY_F6,	0,	
+	0,	KEY_F4,	KEY_F5,	KEY_F6,	0,	0,	
 	KEY_Equal_Plus,	0,	KEY_F1,	KEY_F2,	KEY_F3,	0,	0,	
 	KEY_RightGUI,	KEY_RightAlt,	KEY_DownArrow,	KEY_UpArrow,	KEY_RightControl,	
 	KEY_DownArrow,	KEY_UpArrow,	
 	0,	0,	0,	
 	KEY_DeleteBackspace,	KEY_ReturnEnter,	KEY_Spacebar	
 ),
-// LAYER 2
+// LAYER 2 layout
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -143,7 +143,7 @@ KB_MATRIX_LAYER(
 	0,	0,	0,	
 	KEY_DeleteBackspace,	0,	KEYPAD_0_Insert	
 ),
-// LAYER 3
+// LAYER 3 layout
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -166,7 +166,7 @@ KB_MATRIX_LAYER(
 	0,	0,	0,	
 	0,	MEDIAKEY_AUDIO_MUTE,	MEDIAKEY_PLAY_PAUSE	
 ),
-// LAYER 4
+// LAYER 4 layout
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -189,7 +189,7 @@ KB_MATRIX_LAYER(
 	0,	0,	0,	
 	0,	0,	0	
 ),
-// LAYER 5
+// LAYER 5 layout
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -212,7 +212,7 @@ KB_MATRIX_LAYER(
 	0,	0,	0,	
 	0,	0,	0	
 ),
-// LAYER 6
+// LAYER 6 layout
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -235,7 +235,7 @@ KB_MATRIX_LAYER(
 	0,	0,	0,	
 	0,	0,	0	
 ),
-// LAYER 7
+// LAYER 7 layout
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -258,7 +258,7 @@ KB_MATRIX_LAYER(
 	0,	0,	0,	
 	0,	0,	0	
 ),
-// LAYER 8
+// LAYER 8 layout
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -281,7 +281,7 @@ KB_MATRIX_LAYER(
 	0,	0,	0,	
 	0,	0,	0	
 ),
-// LAYER 9
+// LAYER 9 layout
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -309,7 +309,7 @@ KB_MATRIX_LAYER(
 
 // PRESS ----------------------------------------------------------------------
 const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
-// LAYER 0
+// LAYER 0 press
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -332,7 +332,7 @@ KB_MATRIX_LAYER(
 	kprrel,	NULL,	NULL,	
 	kprrel,	kprrel,	kprrel	
 ),
-// LAYER 1
+// LAYER 1 press
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -348,14 +348,14 @@ KB_MATRIX_LAYER(
 	// right hand
 	lpop1,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 	ktrans,	ktrans,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	ktrans,	ktrans,	kprrel,	kprrel,	kprrel,	ktrans,	
+	ktrans,	kprrel,	kprrel,	kprrel,	ktrans,	ktrans,	
 	ktrans,	ktrans,	kprrel,	kprrel,	kprrel,	ktrans,	ktrans,	
 	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
 	ktrans,	ktrans,	
 	NULL,	NULL,	NULL,	
 	ktrans,	ktrans,	ktrans	
 ),
-// LAYER 2
+// LAYER 2 press
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -378,7 +378,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	kprrel,	NULL,	kprrel	
 ),
-// LAYER 3
+// LAYER 3 press
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -401,7 +401,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	NULL,	mprrel,	mprrel	
 ),
-// LAYER 4
+// LAYER 4 press
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -424,7 +424,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	NULL,	NULL,	NULL	
 ),
-// LAYER 5
+// LAYER 5 press
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -447,7 +447,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	NULL,	NULL,	NULL	
 ),
-// LAYER 6
+// LAYER 6 press
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -470,7 +470,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	NULL,	NULL,	NULL	
 ),
-// LAYER 7
+// LAYER 7 press
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -493,7 +493,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	NULL,	NULL,	NULL	
 ),
-// LAYER 8
+// LAYER 8 press
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -516,7 +516,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	NULL,	NULL,	NULL	
 ),
-// LAYER 9
+// LAYER 9 press
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -544,7 +544,7 @@ KB_MATRIX_LAYER(
 
 // RELEASE --------------------------------------------------------------------
 const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
-// LAYER 0
+// LAYER 0 release
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -567,7 +567,7 @@ KB_MATRIX_LAYER(
 	kprrel,	NULL,	NULL,	
 	kprrel,	kprrel,	kprrel	
 ),
-// LAYER 1
+// LAYER 1 release
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -583,14 +583,14 @@ KB_MATRIX_LAYER(
 	// right hand
 	NULL,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
 	ktrans,	ktrans,	kprrel,	kprrel,	kprrel,	kprrel,	kprrel,	
-	ktrans,	ktrans,	kprrel,	kprrel,	kprrel,	ktrans,	
+	ktrans,	kprrel,	kprrel,	kprrel,	ktrans,	ktrans,	
 	ktrans,	ktrans,	kprrel,	kprrel,	kprrel,	ktrans,	ktrans,	
 	ktrans,	ktrans,	ktrans,	ktrans,	ktrans,	
 	ktrans,	ktrans,	
 	NULL,	NULL,	NULL,	
 	ktrans,	ktrans,	ktrans	
 ),
-// LAYER 2
+// LAYER 2 release
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -613,7 +613,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	kprrel,	NULL,	kprrel	
 ),
-// LAYER 3
+// LAYER 3 release
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -636,7 +636,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	NULL,	mprrel,	mprrel	
 ),
-// LAYER 4
+// LAYER 4 release
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -659,7 +659,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	NULL,	NULL,	NULL	
 ),
-// LAYER 5
+// LAYER 5 release
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -682,7 +682,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	NULL,	NULL,	NULL	
 ),
-// LAYER 6
+// LAYER 6 release
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -705,7 +705,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	NULL,	NULL,	NULL	
 ),
-// LAYER 7
+// LAYER 7 release
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -728,7 +728,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	NULL,	NULL,	NULL	
 ),
-// LAYER 8
+// LAYER 8 release
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
@@ -751,7 +751,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	
 	NULL,	NULL,	NULL	
 ),
-// LAYER 9
+// LAYER 9 release
 KB_MATRIX_LAYER(
 	// unused
 	NULL,	
