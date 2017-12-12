@@ -132,7 +132,7 @@ KB_MATRIX_LAYER(
 	0,	0,	0,	0,	0,	
 	0,	0,	
 	0,	0,	0,	
-	0,	0,	KEY_DeleteBackspace,	
+	KEY_Spacebar,	KEY_Escape,	KEY_DeleteForward,	
 	// right hand
 	2,	0,	KEYPAD_NumLock_Clear,	KEYPAD_Slash,	KEYPAD_Asterisk,	KEYPAD_Minus,	0,	
 	0,	0,	KEYPAD_7_Home,	KEYPAD_8_UpArrow,	KEYPAD_9_PageUp,	KEYPAD_Plus,	0,	
@@ -141,7 +141,7 @@ KB_MATRIX_LAYER(
 	KEYPAD_0_Insert,	KEYPAD_0_Insert,	KEYPAD_Period_Delete,	KEY_ReturnEnter,	0,	
 	0,	0,	
 	0,	0,	0,	
-	KEY_DeleteBackspace,	0,	KEYPAD_0_Insert	
+	KEY_Spacebar,	KEY_DeleteBackspace,		KEY_ReturnEnter
 ),
 // LAYER 3 layout
 KB_MATRIX_LAYER(
@@ -367,7 +367,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	NULL,	NULL,	
 	NULL,	NULL,	
 	NULL,	NULL,	NULL,	
-	NULL,	NULL,	kprrel,	
+	kprrel,	kprrel,	kprrel,	
 	// right hand
 	lpop2,	NULL,	kprrel,	kprrel,	kprrel,	kprrel,	NULL,	
 	NULL,	NULL,	kprrel,	kprrel,	kprrel,	kprrel,	NULL,	
@@ -376,7 +376,7 @@ KB_MATRIX_LAYER(
 	kprrel,	kprrel,	kprrel,	kprrel,	NULL,	
 	NULL,	NULL,	
 	NULL,	NULL,	NULL,	
-	kprrel,	NULL,	kprrel	
+	kprrel,	kprrel,	kprrel	
 ),
 // LAYER 3 press
 KB_MATRIX_LAYER(
@@ -602,7 +602,7 @@ KB_MATRIX_LAYER(
 	NULL,	NULL,	NULL,	NULL,	NULL,	
 	NULL,	NULL,	
 	NULL,	NULL,	NULL,	
-	NULL,	NULL,	kprrel,	
+	kprrel,	kprrel,	kprrel,	
 	// right hand
 	NULL,	NULL,	kprrel,	kprrel,	kprrel,	kprrel,	NULL,	
 	NULL,	NULL,	kprrel,	kprrel,	kprrel,	kprrel,	NULL,	
@@ -611,7 +611,7 @@ KB_MATRIX_LAYER(
 	kprrel,	kprrel,	kprrel,	kprrel,	NULL,	
 	NULL,	NULL,	
 	NULL,	NULL,	NULL,	
-	kprrel,	NULL,	kprrel	
+	kprrel,	kprrel,	kprrel	
 ),
 // LAYER 3 release
 KB_MATRIX_LAYER(
