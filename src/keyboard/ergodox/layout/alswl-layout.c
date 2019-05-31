@@ -74,7 +74,7 @@ void kbfun_layer_pop_all(void) {
 
 // LAYOUT ---------------------------------------------------------------------
 const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
-// LAYER 0 layout
+// LAYER 0 layout, Noral input
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -83,7 +83,7 @@ KB_MATRIX_LAYER(
 	KEY_Tab,	KEY_q_Q,	KEY_w_W,	KEY_e_E,	KEY_r_R,	KEY_t_T,	KEY_LeftBracket_LeftBrace,	
 	KEY_LeftControl,	KEY_a_A,	KEY_s_S,	KEY_d_D,	KEY_f_F,	KEY_g_G,	
 	KEY_LeftShift,	KEY_z_Z,	KEY_x_X,	KEY_c_C,	KEY_v_V,	KEY_b_B,	KEY_RightBracket_RightBrace,	
-	2,	1,	KEY_LeftControl,	KEY_LeftAlt,	KEY_LeftGUI,	
+	2,	1,	0,	KEY_LeftAlt,	KEY_LeftGUI,	
 	KEY_LeftArrow,	KEY_RightArrow,	
 	0,	0,	4,	
 	KEY_Spacebar,	KEY_Escape,	KEY_DeleteForward,	
@@ -94,10 +94,10 @@ KB_MATRIX_LAYER(
 	KEY_Equal_Plus,	KEY_n_N,	KEY_m_M,	KEY_Comma_LessThan,	KEY_Period_GreaterThan,	KEY_Slash_Question,	KEY_RightShift,	
 	KEY_RightGUI,	KEY_RightAlt,	KEY_DownArrow,	KEY_UpArrow,	4,	
 	KEY_LeftArrow,	KEY_RightArrow,	
-	KEY_RightControl,	0,	0,	
-	KEY_Spacebar,	KEY_DeleteBackspace,		KEY_ReturnEnter
+	KEY_UpArrow,	0,	0,	
+	KEY_DownArrow,	KEY_DeleteBackspace,		KEY_ReturnEnter
 ),
-// LAYER 1 layout
+// LAYER 1 layout, Fn key
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -106,21 +106,21 @@ KB_MATRIX_LAYER(
 	KEY_Tab,	0,	0,	0,	0,	0,	KEY_LeftBracket_LeftBrace,	
 	KEY_LeftControl,	0,	0,	0,	0,	KEY_g_G,	
 	KEY_LeftShift,	0,	0,	0,	0,	0,	KEY_RightBracket_RightBrace,	
-	2,	1,	KEY_LeftControl,	KEY_LeftAlt,	KEY_LeftGUI,	
+	2,	1,	0,	KEY_LeftAlt,	KEY_LeftGUI,	
 	KEY_LeftArrow,	KEY_RightArrow,	
 	0,	0,	0,	
-	KEY_Spacebar,	KEY_Escape,	KEY_DeleteBackspace,	
+	KEY_Spacebar,	KEY_Escape,	KEY_DeleteForward,	
 	// right hand
 	1,	KEY_F6,	KEY_F7,	KEY_F8,	KEY_F9,	KEY_F10,	KEY_F11,	
 	KEY_CapsLock,	0,	KEY_F7,	KEY_F8,	KEY_F9,	KEY_F10,	KEY_F12,	
 	0,	KEY_F4,	KEY_F5,	KEY_F6,	0,	0,	
 	KEY_Equal_Plus,	0,	KEY_F1,	KEY_F2,	KEY_F3,	0,	0,	
 	KEY_RightGUI,	KEY_RightAlt,	KEY_DownArrow,	KEY_UpArrow,	KEY_RightControl,	
-	KEY_DownArrow,	KEY_UpArrow,	
-	0,	0,	0,	
-	KEY_DeleteBackspace,	KEY_ReturnEnter,	KEY_Spacebar	
+	KEY_LeftArrow,	KEY_RightArrow,	
+	KEY_UpArrow,	0,	0,	
+	KEY_DownArrow,	KEY_DeleteBackspace,		KEY_ReturnEnter
 ),
-// LAYER 2 layout
+// LAYER 2 layout, Number Pad
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -139,11 +139,11 @@ KB_MATRIX_LAYER(
 	0,	KEYPAD_4_LeftArrow,	KEYPAD_5,	KEYPAD_6_RightArrow,	KEYPAD_Plus,	KEY_Semicolon_Colon,	
 	0,	0,	KEYPAD_1_End,	KEYPAD_2_DownArrow,	KEYPAD_3_PageDown,	KEY_ReturnEnter,	KEY_RightShift,	
 	KEYPAD_0_Insert,	KEYPAD_0_Insert,	KEYPAD_Period_Delete,	KEY_ReturnEnter,	0,	
-	0,	0,	
-	0,	0,	0,	
-	KEY_Spacebar,	KEY_DeleteBackspace,		KEY_ReturnEnter
+	KEY_LeftArrow,	KEY_RightArrow,	
+	KEY_UpArrow,	0,	0,	
+	KEY_DownArrow,	KEY_DeleteBackspace,		KEY_ReturnEnter
 ),
-// LAYER 3 layout
+// LAYER 3 layout, Media
 KB_MATRIX_LAYER(
 	// unused
 	0,	
@@ -166,7 +166,7 @@ KB_MATRIX_LAYER(
 	0,	0,	0,	
 	0,	MEDIAKEY_AUDIO_MUTE,	MEDIAKEY_PLAY_PAUSE	
 ),
-// LAYER 4 layout
+// LAYER 4 layout, Navigation Mode
 KB_MATRIX_LAYER(
 	// unused
 	0,	
