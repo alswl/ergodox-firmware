@@ -172,22 +172,22 @@ KB_MATRIX_LAYER(
 	0,	
 	// left hand
 	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	KEY_UpArrow,	0,	0,	0,	
-	0,	0,	KEY_LeftArrow,	KEY_DownArrow,	KEY_RightArrow,	0,	
-	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	
-	0,	0,	
+	KEY_Tab,	0,	0,	KEY_UpArrow,	0,	0,	0,	
+	KEY_LeftControl,	0,	KEY_LeftArrow,	KEY_DownArrow,	KEY_RightArrow,	0,
+	KEY_LeftShift,	0,	0,	0,	0,	0,	0,	
+	0,	0,	0,	KEY_LeftAlt,	KEY_LeftGUI,	
+	KEY_LeftArrow,	KEY_RightArrow,	
 	0,	0,	0,	
-	0,	0,	0,	
+	KEY_Spacebar,	KEY_Escape,	KEY_DeleteForward,	
 	// right hand
 	0,	0,	0,	0,	0,	0,	0,	
 	0,	0,	0,	0,	0,	0,	0,	
 	0,	0,	0,	0,	0,	0,	
 	0,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	
-	0,	0,	
-	0,	0,	0,	
-	0,	0,	0	
+	KEY_RightGUI,	KEY_RightAlt,	KEY_DownArrow,	KEY_UpArrow,	KEY_RightControl,	
+	KEY_LeftArrow,	KEY_RightArrow,	
+	KEY_UpArrow,	0,	0,	
+	KEY_DownArrow,	KEY_DeleteBackspace,		KEY_ReturnEnter
 ),
 // LAYER 5 layout
 KB_MATRIX_LAYER(
