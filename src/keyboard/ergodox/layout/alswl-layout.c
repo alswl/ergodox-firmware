@@ -115,7 +115,7 @@ KB_MATRIX_LAYER(
 	KEY_CapsLock,	0,	KEY_F7,	KEY_F8,	KEY_F9,	KEY_F10,	KEY_F12,	
 	0,	KEY_F4,	KEY_F5,	KEY_F6,	0,	0,	
 	KEY_Equal_Plus,	0,	KEY_F1,	KEY_F2,	KEY_F3,	0,	0,	
-	KEY_RightGUI,	KEY_RightAlt,	KEY_DownArrow,	KEY_UpArrow,	KEY_RightControl,	
+	KEY_RightGUI,	KEY_RightAlt,	KEY_DownArrow,	KEY_UpArrow,	4,	
 	KEY_LeftArrow,	KEY_RightArrow,	
 	KEY_UpArrow,	0,	0,	
 	KEY_DownArrow,	KEY_DeleteBackspace,		KEY_ReturnEnter
@@ -125,12 +125,12 @@ KB_MATRIX_LAYER(
 	// unused
 	0,	
 	// left hand
-	KEY_LeftControl,	0,	0,	0,	0,	0,	0,	
 	0,	0,	0,	0,	0,	0,	0,	
+	KEY_Tab,	0,	0,	0,	0,	0,	0,	
 	KEY_LeftControl,	0,	0,	0,	0,	0,	
 	KEY_LeftShift,	0,	0,	0,	0,	0,	0,	
-	0,	0,	0,	0,	0,	
-	0,	0,	
+	0,	0,	0,	KEY_LeftAlt,	KEY_LeftGUI,	
+	KEY_LeftArrow,	KEY_RightArrow,	
 	0,	0,	0,	
 	KEY_Spacebar,	KEY_Escape,	KEY_DeleteForward,	
 	// right hand
@@ -184,7 +184,7 @@ KB_MATRIX_LAYER(
 	0,	0,	0,	0,	0,	0,	0,	
 	0,	0,	0,	0,	0,	0,	
 	0,	0,	0,	0,	0,	0,	0,	
-	KEY_RightGUI,	KEY_RightAlt,	KEY_DownArrow,	KEY_UpArrow,	KEY_RightControl,	
+	KEY_RightGUI,	KEY_RightAlt,	KEY_DownArrow,	KEY_UpArrow,	4,	
 	KEY_LeftArrow,	KEY_RightArrow,	
 	KEY_UpArrow,	0,	0,	
 	KEY_DownArrow,	KEY_DeleteBackspace,		KEY_ReturnEnter
